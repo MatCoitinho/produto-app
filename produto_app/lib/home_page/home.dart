@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   context: context,
                   builder: (context) => ProductDetailDialog(product: product),
                 ).then((_) =>
-                    fetchProducts()); // refresh products after editing or deleting
+                    fetchProducts());
               },
             ),
           );
@@ -70,9 +70,9 @@ class _HomePageState extends State<HomePage> {
             context: context,
             builder: (context) => ProductFormDialog(),
           ).then(
-              (_) => fetchProducts()); // refresh products after adding new one
+              (_) => fetchProducts());
         },
-        backgroundColor: Color(0xFFFF6F00), // Laranja vibrante
+        backgroundColor: Color(0xFFFF6F00),
         child: Icon(Icons.add),
       ),
     );

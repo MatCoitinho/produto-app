@@ -54,7 +54,7 @@ class _ProductFormDialogState extends State<ProductFormDialog> {
           throw Exception('Failed to create product');
         }
       } else {
-        // Update an existing product
+        
         final response = await http.put(
           Uri.parse('http://localhost:8080/produto/${widget.product!['id']}'),
           headers: {'Content-Type': 'application/json'},
